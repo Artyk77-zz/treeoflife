@@ -1,0 +1,85 @@
+<div class="menu-title">
+    <span class="color-highlight">Datos de usuario</span>
+    <h1>Configurar cuenta</h1>
+    <a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
+</div>
+<div class="menu-page">
+    <div class="page-login page-login-full bottom-20">
+        <div class="page-login-field top-15">
+            <i class="fa fa-user color-highlight"></i>
+            <input type="text" placeholder="Nombre y apellido">
+            <em>(requerido) &nbsp;</em>
+        </div>
+        <div class="page-login-field">
+            <i class="fa fa-at color-highlight"></i>
+            <input type="text" placeholder="Email">
+            <em>(requerido) &nbsp;</em>
+        </div>
+        <div class="page-login-field">
+            <i class="fa fa-lock color-highlight"></i>
+            <input type="password" placeholder="Contraseña">
+            <em>(requerido) &nbsp;</em>
+        </div>
+        <div class="page-login-field">
+            <i class="fa fa-lock color-highlight"></i>
+            <input type="password" placeholder="Confirmar contraseña">
+            <em>(requerido) &nbsp;</em>
+        </div>
+        <div class="page-login-field">
+            <i class="fa fa-phone color-highlight"></i>
+            <input type="number" placeholder="Celular">
+            <em>(requerido) &nbsp;</em>
+        </div>
+        <div class="page-login-field">
+            <i class="fas fa-birthday-cake color-highlight"></i>
+            <input type="date" placeholder="Fecha de nacimiento">
+            <em>(requerido) &nbsp;</em>
+        </div>
+        <div class="page-login-field">
+            <i class="fa fa-genderless color-highlight"></i>
+            <select placeholder="Género" style="width:100%; color:darkgrey; font-size:12px;">
+                <option value=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Género</option>
+                <option value="Hombre"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hombre</option>
+                <option value="Mujer"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mujer</option>
+                <option value="Mujer"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otros</option>
+            </select>
+        </div>
+        <div class="page-login-field bottom-30">
+            <i class="fas fa-shoe-prints color-highlight"></i>
+            <select placeholder="Género" style="width:100%; color:darkgrey; font-size:12px;">
+                <option value=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cómo es su nivel de actividad física</option>
+                <option value="Activo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activo</option>
+                <option value="Medio"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medio</option>
+                <option value="Sedentario"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sedentario</option>
+            </select>
+        </div>
+        <div class="page-login-links bottom-10">
+            <div class="clear"></div>
+        </div>
+        <a href="#" class="button button-green button-full button-rounded button-sm uppercase ultrabold shadow-small ">Actualizar</a>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    var highlights = 'highlight-green highlight-red highlight-blue highlight-blue highlight-orange highlight-magenta highlight-simple';
+
+    $('.demo-green').on('click', function(){$('.demo-colors-select a').removeClass('active-demo-color'); $(this).addClass('active-demo-color');  $('#page-transitions').removeClass(highlights).addClass('highlight-green');});
+    $('.demo-red').on('click', function(){$('.demo-colors-select a').removeClass('active-demo-color'); $(this).addClass('active-demo-color');   $('#page-transitions').removeClass(highlights).addClass('highlight-red');});
+    $('.demo-blue').on('click', function(){$('.demo-colors-select a').removeClass('active-demo-color'); $(this).addClass('active-demo-color');  $('#page-transitions').removeClass(highlights).addClass('highlight-blue');});
+    $('.demo-orange').on('click', function(){$('.demo-colors-select a').removeClass('active-demo-color'); $(this).addClass('active-demo-color');   $('#page-transitions').removeClass(highlights).addClass('highlight-orange');});
+    $('.demo-magenta').on('click', function(){$('.demo-colors-select a').removeClass('active-demo-color'); $(this).addClass('active-demo-color');   $('#page-transitions').removeClass(highlights).addClass('highlight-magenta');});
+    $('.demo-simple').on('click', function(){$('.demo-colors-select a').removeClass('active-demo-color'); $(this).addClass('active-demo-color');  $('#page-transitions').removeClass(highlights).addClass('highlight-simple');});
+    $('.toggle-dark-mode a').on('click', function(){
+        $(this).parent().toggleClass('toggle-active');
+        $(this).parent().find('.toggle-content').slideToggle(250);
+        if($('#page-transitions').hasClass('light-skin')){
+            console.log('light');
+            $('#page-transitions').removeClass('light-skin').addClass('dark-skin');
+        } else {  
+            $('#page-transitions').removeClass('dark-skin').addClass('light-skin');
+        };
+        return false;
+    });
+    if($('#page-transitions').hasClass('dark-skin')){$('.toggle-dark-mode').addClass('toggle-active');}
+</script>

@@ -1,0 +1,55 @@
+<div class="menu-title">
+    <h1>Navegación</h1>
+    <a href="#" class="menu-hide"><i class="fa fa-times"></i></a>
+</div>
+<div class="menu-page">
+    <ul class="menu-list">
+        <li id="menu-index">
+            <a href="home-1.html">
+                <i class='fa fa-home color-green-dark'></i>
+                <span>Inicio</span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>  
+        <li id="menu-components">
+            <a href="caminar.html">
+                <i class='fas fa-walking color-yellow-dark'></i>
+                <span>Camina</span>
+                <em>Registra tus pasos</em>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>   
+        <li id="menu-pages">
+            <a href="pedalear.html">
+                <i class='fas fa-bicycle color-red-dark'></i>
+                <span>Pedalea</span>
+                <em>Registra los kms en bicicleta</em>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>    
+        <li id="menu-media">
+            <a href="tienda.html">
+                <i class='fas fa-shopping-cart color-brown-light'></i>
+                <span>Tienda</span>
+                <em>Compra los productos de Treelife</em>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>      
+        <li id="menu-contact">
+            <a href="reclama.html">
+                <i class='fa fa-envelope color-blue-dark'></i>
+                <span>Redime</span>
+                <em>Redime los premios por los puntos acumulados</em>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $('#menu-hider, .close-menu, .menu-hide').on('click',function(){
+        $('.menu-box').removeClass('menu-box-active');
+        $('#menu-hider').removeClass('menu-hider-active');
+        return false;
+    });
+</script>
